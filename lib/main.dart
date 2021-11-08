@@ -24,6 +24,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final TextEditingController controller = TextEditingController();
   String? errorText;
+  bool pressed = false;
+  double? convertedValue;
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +60,6 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 final String value = controller.text;
                 final double? doubleValue = double.tryParse(value);
-                double? convertedValue;
 
                 setState(() {
                   if(doubleValue == null) {
@@ -66,11 +67,15 @@ class _HomePageState extends State<HomePage> {
                   } else {
                     errorText = null;
                     convertedValue = doubleValue * 4.95;
-                    print('$convertedValue RON');
+                    pressed = !pressed;
                   }
                 });
               },
           ),
+          Visibility(
+            visible : pressed,
+            child: Text('$convertedValue'),
+          )
         ],
       ),
     );
