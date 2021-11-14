@@ -1,20 +1,22 @@
-# flutter_homework1
+Homework1 Currency convertor
 
-A new Flutter project.
+<p float="left">
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw01_1.JPG" width="200" height="350" />
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw01_2.JPG" width="200" height="350" />
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw01_3.JPG" width="200" height="350" />
+</p>
 
-## Getting Started
+Homework 2 Guess my number
+<p float="left">
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw02_1_1.JPG" width="200" height="350"/>
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw02_1_2.JPG" width="200" height="350"/>
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw02_1_3.JPG" width="200" height="350"/>
+</p>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/Capture.JPG"/>
-<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/Capture2.JPG"/>
-<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/Capture3.JPG"/>
+Homework 2 Perfect square or perfect triangle number
+<p float="left">
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw02_2_1.JPG" width="200" height="350"/>
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw02_2_2.JPG" width="200" height="350"/>
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw02_2_3.JPG" width="200" height="350"/>
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw02_2_4.JPG" width="200" height="350"/>
+</p>
