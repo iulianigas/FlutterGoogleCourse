@@ -1,4 +1,4 @@
-import 'src/hw02_2.dart' as app;
+import 'src/hw02_1.dart' as app;
 
 void main() {
   app.main();
