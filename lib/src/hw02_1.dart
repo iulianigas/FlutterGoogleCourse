@@ -1,8 +1,6 @@
-import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:powers/powers.dart';
 
 void main() {
   runApp(const FlutterApp());
@@ -31,7 +29,7 @@ class _HomePageState extends State<HomePage> {
   int randomNumber = Random().nextInt(100);
   String? message;
 
-  checkAnswer(int answerNumber) {
+  void checkAnswer(int answerNumber) {
     setState(() {
       if (answerNumber == randomNumber) {
         message = 'It is $randomNumber, Congratulations!';
@@ -48,7 +46,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Guess my number'),
+        title: const Text('Guess my number'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
@@ -68,18 +66,18 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.all(50.0),
               child: TextField(
                 controller: controller,
-                decoration: InputDecoration(hintText: 'Type your guess'),
+                decoration: const InputDecoration(hintText: 'Type your guess'),
                 keyboardType: TextInputType.number,
               ),
             ),
             Text(
               '$message',
-              style: TextStyle(fontSize: 15),
+              style: const TextStyle(fontSize: 15),
             ),
             Padding(
               padding: const EdgeInsets.all(24.0),
               child: ElevatedButton(
-                child: Text('Guess'),
+                child: const Text('Guess'),
                 onPressed: () {
                   checkAnswer(int.parse(controller.text));
                 },
@@ -97,4 +95,3 @@ class _HomePageState extends State<HomePage> {
     controller.dispose();
   }
 }
-

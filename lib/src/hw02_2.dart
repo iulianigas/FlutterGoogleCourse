@@ -1,6 +1,3 @@
-import 'dart:io';
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:powers/powers.dart';
 
@@ -34,28 +31,25 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Number Shapes'),
+        title: const Text('Number Shapes'),
       ),
       body: Column(
-        children: <Widget> [
+        children: <Widget>[
           const Text(
             'Please input a number to see if it is perfect square or perfect triangle',
             textAlign: TextAlign.center,
             style: TextStyle(fontFamily: 'Raleway', fontSize: 20),
           ),
           Container(
-            margin: EdgeInsetsDirectional.all(16.0),
+            margin: const EdgeInsetsDirectional.all(16.0),
             child: TextField(
               controller: controller,
               keyboardType: TextInputType.number,
-              ),
             ),
+          ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.check),
-        onPressed: showMessage,
-      ),
+      floatingActionButton: FloatingActionButton(onPressed: showMessage, child: const Icon(Icons.check)),
     );
   }
 
@@ -63,23 +57,24 @@ class _HomePageState extends State<HomePage> {
     final String value = controller.text;
     final int titleValue = int.parse(value);
 
-    showDialog(
+    showDialog<void>(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('$titleValue'),
           content: Column(
-            children: [
-              if(titleValue.isSquare)
+            children: <Widget>[
+              if (titleValue.isSquare)
                 Text('Number $titleValue is PERFECT SQUARE')
-              else if(titleValue.isCube)
+              else if (titleValue.isCube)
                 Text('Number $titleValue is PERFECT TRIANGLE')
-              else Text('Number $titleValue is NEITHER PERFECT SQUARE OR PERFECT TRIANGLE')
+              else
+                Text('Number $titleValue is NEITHER PERFECT SQUARE OR PERFECT TRIANGLE')
             ],
           ),
           actions: <Widget>[
             TextButton(
-              child: Text("Close"),
+              child: const Text('Close'),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -90,4 +85,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-

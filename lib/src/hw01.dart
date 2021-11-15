@@ -33,22 +33,22 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Currency convertor'),
+        title: const Text('Currency convertor'),
       ),
       resizeToAvoidBottomInset: false,
       body: Column(
-        children: <Widget> [
+        children: <Widget>[
           Image.network('https://i0.1616.ro/media/2/2621/33211/20408407/2/9v8a2732.jpg'),
           Container(
-            margin: EdgeInsetsDirectional.all(16.0),
+            margin: const EdgeInsetsDirectional.all(16.0),
             child: TextField(
               controller: controller,
-              keyboardType: TextInputType.numberWithOptions(decimal: true),
+              keyboardType: const TextInputType.numberWithOptions(decimal: true),
               decoration: InputDecoration(
                 hintText: 'Enter the amount in EUR',
                 errorText: errorText,
                 suffix: IconButton(
-                  icon: Icon(Icons.close),
+                  icon: const Icon(Icons.close),
                   onPressed: () {
                     controller.clear();
                   },
@@ -57,13 +57,13 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           ElevatedButton(
-            child: Text('CONVERT!'),
+            child: const Text('CONVERT!'),
             onPressed: () {
               final String value = controller.text;
               final double? doubleValue = double.tryParse(value);
 
               setState(() {
-                if(doubleValue == null) {
+                if (doubleValue == null) {
                   errorText = 'This is not a number';
                 } else {
                   errorText = null;
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           Visibility(
-            visible : pressed,
+            visible: pressed,
             child: Text('$convertedValue'),
           )
         ],
