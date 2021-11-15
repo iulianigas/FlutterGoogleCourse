@@ -2,7 +2,7 @@ name: flutter_homework1
 description: A new Flutter project.
 version: 1.0.0+1
 environment:
-  sdk: ">=2.15.0-178.1.beta <3.0.0"
+  sdk: ">=2.14.0 <3.0.0"
 dependencies:
   flutter:
     sdk: flutter
