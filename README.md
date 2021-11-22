@@ -20,3 +20,8 @@ Homework 2 Perfect square or perfect triangle number
 <img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw02_2_3.JPG" width="200" height="350"/>
 <img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw02_2_4.JPG" width="200" height="350"/>
 </p>
+
+Homework 3 Basic phrases
+<p float="left">
+<img src="https://github.com/iulianigas/FlutterGoogleCourse/blob/main/screenshots/hw03_1.JPG" width="200" height="350"/>
+</p>
